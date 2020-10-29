@@ -25,14 +25,14 @@ class Homepage extends StatefulWidget {
 
 class _homeState extends State<Homepage> {
 
-  String mytext= "You";
+  String mytext= "akash";
 
 void _ChangeText(){
   setState(() {
     if(mytext.startsWith("Y")){
         mytext="Can change Yourself";
     }else{
-      mytext = "You";
+      mytext = "akash";
     }
   });
 }
@@ -64,7 +64,7 @@ Widget build(BuildContext context) {
       child: new Icon(Icons.add,
       color: Colors.white),
       onPressed: _ChangeText,
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.blue,
     ),
     body: _bodywidget(),
   );
